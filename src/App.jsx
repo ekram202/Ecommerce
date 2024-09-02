@@ -8,7 +8,6 @@ import Home from "./compontents/Home/Home";
 import Layout from "./compontents/Layout/Layout";
 import Cart from "./compontents/Cart/Cart";
 import Brands from "./compontents/Brands/Brands";
-import Broducts from "./compontents/Broducts/Broducts";
 import Notfound from "./compontents/Notfound/Notfound";
 import Register from "./compontents/Register/Register";
 import Login from "./compontents/Login/Login";
@@ -22,6 +21,8 @@ import Categories from "./compontents/Gategory/Categories";
 import Checkout from "./compontents/Checkout/Checkout";
 import WishCart from "./compontents/WishCart/WishCart";
 import WishcartContextProvider from "./Context/WishcartContext";
+import Broducts from "./compontents/Broducts/Broducts";
+
 
 let a = new QueryClient();
 
@@ -35,7 +36,6 @@ let x = createBrowserRouter([
       { path: "cart", element: <Protected><Cart /></Protected> },
       { path: "WishCart", element: <Protected><WishCart/></Protected> },
       { path: "detalis/:id/:category", element: <Protected><Detalis /></Protected> },
-      { path: "broduct", element: <Protected><Broducts /></Protected> },
       { path: "Broducts", element: <Protected><Broducts /></Protected> },
       { path: "Categories", element: <Categories/> },
       { path: "register", element: <Register /> },
